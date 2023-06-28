@@ -5,63 +5,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Portfolio</title>
-    <style>
-      body {
-        background-color: rgb(255, 237, 177);
-      }
-    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <h1 style="font-family: Courier New, Courier, monospace; font-size: 300%">
-      My Portfolio
-    </h1>
-
-    <p style="text-align: center; margin-right: 8px">
-      <a href="index.html" style="margin-right: 6px; font-size: 120%"> Home</a>
-      |
-      <a
-        href="exp.html"
-        style="margin-left: 6px; margin-right: 6px; font-size: 120%"
+    <div
+      class="d-flex border-bottom gap-3 align-items-center p-2 px-4 bg-black text-white"
+    >
+      <h3 class="my-auto fs-1 d-none d-sm-block">PORTFOLIO</h3>
+      <a class="text-white fs-5" href="index.html"> HOME</a>
+      <a class="text-white fs-5" href="exp.html"> EXPERIENCE </a>
+      <a class="text-white fs-5" href="gallery.html"> GALLERY </a>
+      <a class="text-white me-auto fs-5" href="contact.html">CONTACT</a>
+      <span class="my-auto d-none d-lg-block fs-4"
+        >Happy Life From a Fine Sleep</span
       >
-        Experience
-      </a>
-      |
-      <a href="contact.html" style="margin-left: 6px; font-size: 120%"
-        >Contact</a
-      >
-    </p>
-
-    <img
-      src="image/S__12468230.jpg"
-      width="300px"
-      style="
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 25px;
-        margin-bottom: 25px;
-        display: block;
-        border-radius: 12%;
-      "
-    />
-    <h1>Yotsawat Sukinee</h1>
-
-    <p style="text-align: center; font-size: 125%; line-height: 1.6">
-      I was born on 20 October 2003, 19 years old. I graduated from Nakhonsawan
-      School. <br />It's a pleasure to meet you all.
-    </p>
-
-    <h1 style="text-decoration: underline">Skills</h1>
-
-    <div class="skill-container">
-      <h1 class="skill-header">Programming</h1>
-      <p style="font-size: 112%">
-        I could perform a programming in C++ language
-      </p>
     </div>
 
-    <div class="skill-container">
-      <h1 class="skill-header">Photograph</h1>
-      <p style="font-size: 112%">I am able to take a street photography</p>
+    <div
+      class="d-flex justify-content-center align-items-center mx-auto my-3 gap-4"
+      style="max-width: 700px"
+    >
+      <div class="me-2">
+        <img
+          src="image/S__58.jpg"
+          width="300"
+          height="300"
+          class="rounded-circle"
+          style="object-fit: cover"
+        />
+      </div>
+
+      <div class="d-none d-sm-block ms-2">
+        <div class="display-5 mb-3">Yotsawat Sukinee</div>
+        <hr class="my-2" />
+        <div class="text-muted ms-1" style="font-size: 110%">
+          Hi, nice to meet you, I'm Yotsawat Sukinee. I was born on 20 October
+          2003, 19 years old. I graduated from Nakhonsawan School. I very adore
+          music, especially J-style music<br />It's a pleasure to meet you all.
+        </div>
+      </div>
     </div>
+
+    <div class="display-5 d-sm-none text-center my-3">Yotsawat Sukinee</div>
+
+    <p class="text-center my-2 fs-3">Skills</p>
+
+    <div style="max-width: 700px" class="mx-auto px-3">
+      <div class="d-flex border mb-3 shadow-sm rounded-start-3 rounded-end-3">
+        <div class="rounded-start-3">
+          <img
+            src="image/p1_Programming.jpg"
+            width="150px"
+            height="150px"
+            style="object-fit: cover"
+            class="rounded-start-3 d-none d-sm-block"
+          />
+        </div>
+        <div class="p-4">
+          <p class="fw-semibold fs-4">Programming</p>
+          <span class="text-muted"
+            >I could perform a programming in C++, little html/CSS and Java
+            language.</span
+          >
+        </div>
+      </div>
+      <div class="d-flex border mb-3 shadow-sm rounded-start-3 rounded-end-3">
+        <div class="p-4">
+          <p class="fw-semibold fs-4">Calculus</p>
+          <span class="text-muted"
+            >Calculus is one of the courses in the first years including now,
+            second years, that I think it's a little fun when I try to solve a
+            problem.</span
+          >
+        </div>
+        <div class="rounded-end-3">
+          <img
+            src="image/home_picture_cal.jpg"
+            width="150px"
+            height="150px"
+            style="object-fit: cover"
+            class="rounded-end-3 d-none d-sm-block"
+          />
+        </div>
+      </div>
+      <div class="d-flex border mb-3 shadow-sm rounded-start-3 rounded-end-3">
+        <div class="rounded-start-3">
+          <img
+            src="image/home_picture_2.jpg"
+            width="150px"
+            height="150px"
+            style="object-fit: cover"
+            class="rounded-start-3 d-none d-sm-block"
+          />
+        </div>
+        <div class="p-4">
+          <p class="fw-semibold fs-4">Photography</p>
+          <span class="text-muted"
+            >In daily life, I typically take a photo during walking to class.
+            The type of photo is street photography.</span
+          >
+        </div>
+      </div>
+    </div>
+    <p class="text-center text-muted m-4">
+      © 2023 yotsawat-suki.com by Yotsawat Sukinee
+    </p>
   </body>
 </html>
